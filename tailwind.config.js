@@ -78,16 +78,33 @@ module.exports = {
         },
       },
     },
+    // screens: {
+    //   sm: '640px',
+    //   md: '768px',
+    //   lg: '1024px',
+    //   xl: '1280px',
+    // },
+    container: {
+      center: true,
+      padding: '2rem',
+      screens: {
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
+        '2xl': '1400px',
+      },
+    },
   },
   plugins: [
-    [
-      function ({ addVariant }) {
-        addVariant('light', ({ modifySelectors, separator }) => {
-          modifySelectors(({ className }) => {
-            return `.light .${className}`; // Matches elements inside a `.light` class
-          });
-        });
-      },
-    ],
+    // [
+    //   function ({ addVariant }) {
+    //     addVariant('light', ({ modifySelectors, separator }) => {
+    //       modifySelectors(({ className }) => {
+    //         return `.light .${className}`; // Matches elements inside a `.light` class
+    //       });
+    //     });
+    //   },
+    // ],
   ],
 };

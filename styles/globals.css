@@ -1,7 +1,5 @@
 /* styles/globals.css */
-@layer base {
-  @tailwind base;
-}
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -28,5 +26,11 @@
 } */
 
 body {
-  @apply bg-gray-50 text-black-700;
+  box-sizing: border-box;
+  @apply bg-blue-500 text-white-100;
+}
+
+.todo-container {
+  @apply h-[80vh] w-[90vw] sm:w-[60vw] md:w-[60vw] bg-white-500 border-stone-100 border-2 m-3 rounded-md flex flex-col justify-center
+    items-center drop-shadow-2xl;
 }
